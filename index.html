@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ludo Game</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <h1>Ludo Board Game</h1>
+  <button id="button" type="button">Click to Start</button>
+  <button id="roll-dice" class="button-dice" type="button">Throw Dice</button>
+  <div id="dice">
+    <div id="dot1"></div>
+    <div id="dot2"></div>
+    <div id="dot3"></div>
+    <div id="dot4"></div>
+    <div id="dot5"></div>
+    <div id="dot6"></div>
+    <div id="dot7"></div>
+  </div>
+  <!-- <div id="blue-peon-1"></div> -->
+  <div class="base-blue">
+    <div id="board-blue-base-1">
+      <div id="b1" class="blue-pawn"></div>
+    </div>
+    <div id="board-blue-base-2">
+      <div id="b2" class="blue-pawn"></div>
+    </div>
+    <div id="board-blue-base-3">
+      <div id="b3" class="blue-pawn"></div>
+    </div>
+    <div id="board-blue-base-4">
+      <div id="b4" class="blue-pawn"></div>
+    </div>
+  </div>
+  <div class="base-yellow">
+    <div id="board-yellow-base-1">
+      <div id="y1" class="yellow-pawn"></div>
+    </div>
+    <div id="board-yellow-base-2">
+      <div id="y2" class="yellow-pawn"></div>
+    </div>
+    <div id="board-yellow-base-3">
+      <div id="y3" class="yellow-pawn"></div>
+    </div>
+    <div id="board-yellow-base-4">
+      <div id="y4" class="yellow-pawn"></div>
+    </div>
+  </div>
+  <div class="base-green">
+    <div id="board-green-base-1">
+      <div id="g1" class="green-pawn"></div>
+    </div>
+    <div id="board-green-base-2">
+      <div id="g2" class="green-pawn"></div>
+    </div>
+    <div id="board-green-base-3">
+      <div id="g3" class="green-pawn"></div>
+    </div>
+    <div id="board-green-base-4">
+      <div id="g4" class="green-pawn"></div>
+    </div>
+  </div>
+  <div class="base-red">
+    <div id="board-red-base-1">
+      <div id="r1" class="red-pawn"></div>
+    </div>
+    <div id="board-red-base-2">
+      <div id="r2" class="red-pawn"></div>
+    </div>
+    <div id="board-red-base-3">
+      <div id="r3" class="red-pawn"></div>
+    </div>
+    <div id="board-red-base-4">
+      <div id="r4" class="red-pawn"></div>
+    </div>
+  </div>
+  <div class="grid-top">
+    <div id="board-pos-18"></div>
+    <div id="board-pos-17"></div>
+    <div id="board-pos-16"></div>
+    <div id="board-pos-19"></div>
+    <div id="board-blue-1"></div>
+    <div id="board-pos-15"></div>
+    <div id="board-pos-20"></div>
+    <div id="board-blue-2"></div>
+    <div id="board-pos-14"></div>
+    <div id="board-pos-21"></div>
+    <div id="board-blue-3"></div>
+    <div id="board-pos-13"></div>
+    <div id="board-pos-22"></div>
+    <div id="board-blue-4"></div>
+    <div id="board-pos-12"></div>
+    <div id="board-pos-23"></div>
+    <div id="board-blue-5"></div>
+    <div id="board-pos-11"></div>
+    <div id="board-pos-24"></div>
+    <div id="board-blue-6"></div>
+    <div id="board-pos-10"></div>
+    <div id="board-pos-25"></div>
+    <div id="board-blue-7"></div>
+    <div id="board-pos-9"></div>
+  </div>
+  <div class="grid-bottom">
+    <div id="board-pos-43"></div>
+    <div id="board-green-7"></div>
+    <div id="board-pos-59"></div>
+    <div id="board-pos-44"></div>
+    <div id="board-green-6"></div>
+    <div id="board-pos-58"></div>
+    <div id="board-pos-45"></div>
+    <div id="board-green-5"></div>
+    <div id="board-pos-57"></div>
+    <div id="board-pos-46"></div>
+    <div id="board-green-4"></div>
+    <div id="board-pos-56"></div>
+    <div id="board-pos-47"></div>
+    <div id="board-green-3"></div>
+    <div id="board-pos-55"></div>
+    <div id="board-pos-48"></div>
+    <div id="board-green-2"></div>
+    <div id="board-pos-54"></div>
+    <div id="board-pos-49"></div>
+    <div id="board-green-1"></div>
+    <div id="board-pos-53"></div>
+    <div id="board-pos-50"></div>
+    <div id="board-pos-51"></div>
+    <div id="board-pos-52"></div>
+  </div>
+  <div class="grid-right">
+    <div id="board-pos-8"></div>
+    <div id="board-pos-7"></div>
+    <div id="board-pos-6"></div>
+    <div id="board-pos-5"></div>
+    <div id="board-pos-4"></div>
+    <div id="board-pos-3"></div>
+    <div id="board-pos-2"></div>
+    <div id="board-pos-1"></div>
+    <div id="board-yellow-7"></div>
+    <div id="board-yellow-6"></div>
+    <div id="board-yellow-5"></div>
+    <div id="board-yellow-4"></div>
+    <div id="board-yellow-3"></div>
+    <div id="board-yellow-2"></div>
+    <div id="board-yellow-1"></div>
+    <div id="board-pos-68"></div>
+    <div id="board-pos-60"></div>
+    <div id="board-pos-61"></div>
+    <div id="board-pos-62"></div>
+    <div id="board-pos-63"></div>
+    <div id="board-pos-64"></div>
+    <div id="board-pos-65"></div>
+    <div id="board-pos-66"></div>
+    <div id="board-pos-67"></div>
+  </div>
+  <div class="grid-left">
+    <div id="board-pos-33"></div>
+    <div id="board-pos-32"></div>
+    <div id="board-pos-31"></div>
+    <div id="board-pos-30"></div>
+    <div id="board-pos-29"></div>
+    <div id="board-pos-28"></div>
+    <div id="board-pos-27"></div>
+    <div id="board-pos-26"></div>
+    <div id="board-pos-34"></div>
+    <div id="board-red-1"></div>
+    <div id="board-red-2"></div>
+    <div id="board-red-3"></div>
+    <div id="board-red-4"></div>
+    <div id="board-red-5"></div>
+    <div id="board-red-6"></div>
+    <div id="board-red-7"></div>
+    <div id="board-pos-35"></div>
+    <div id="board-pos-36"></div>
+    <div id="board-pos-37"></div>
+    <div id="board-pos-38"></div>
+    <div id="board-pos-39"></div>
+    <div id="board-pos-40"></div>
+    <div id="board-pos-41"></div>
+    <div id="board-pos-42"></div>
+  </div>
+  <div class="grid-center-blue">
+    <div id="board-blue-final"></div>
+  </div>
+  <div class="grid-center-yellow">
+    <div id="board-yellow-final"></div>
+  </div>
+  <div class="grid-center-green">
+    <div id="board-green-final"></div>
+  </div>
+  <div class="grid-center-red">
+    <div id="board-red-final"></div>
+  </div>
+  <img src="images/tabuleiro-ludo-2.svg" alt="Ludo Board" width:="600px" height="600px">
+</body>
+<script src="src/dice.js"></script>
+<script src="src/pawns.js"></script>
+<script src="src/main.js"></script>
+</html>

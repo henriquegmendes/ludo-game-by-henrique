@@ -1,0 +1,349 @@
+body {
+  text-align: center;
+  background-image: url("../images/background.png")
+}
+
+h1 {
+  color: black;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 1px 2px grey;
+}
+
+#button {
+  display: block;
+  margin: 35px auto;
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #a01c1c;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#button:hover {background-color: #a59b27}
+
+#button:active {
+  background-color: #a59b27;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-dice {
+  display: block;
+  margin: 35px auto;
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #427a43;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  display: none;
+}
+
+.button-dice:hover {
+  background-color: #172c6d;
+}
+
+.button-dice:active {
+  background-color: #172c6d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.blue-pawn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: blue;
+  margin-left: 10%;
+  /* margin-top: 10%; */
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.yellow-pawn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  margin-left: 10%;
+  margin-top: 10%;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.green-pawn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: green;
+  margin-left: 10%;
+  margin-top: 10%;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.red-pawn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  margin-left: 10%;
+  margin-top: 10%;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.base-blue {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 1px solid green;
+  margin-top: 72px;
+  margin-left: 443px;
+}
+
+.base-blue > div {
+  float: left;
+  width: 38px;
+  height: 38px;
+  border: 1px solid red;
+}
+
+.base-yellow {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 1px solid green;
+  margin-top: 72px;
+  margin-left: 812px;
+}
+
+.base-yellow > div {
+  float: left;
+  width: 38px;
+  height: 38px;
+  border: 1px solid red;
+}
+
+.base-green {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 1px solid blue;
+  margin-top: 442px;
+  margin-left: 812px;
+}
+
+.base-green > div {
+  float: left;
+  width: 38px;
+  height: 38px;
+  border: 1px solid red;
+}
+
+.base-red {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 1px solid green;
+  margin-top: 442px;
+  margin-left: 443px;
+}
+
+.base-red > div {
+  float: left;
+  width: 38px;
+  height: 38px;
+  border: 1px solid yellow;
+}
+
+.grid-top {
+  position: absolute;
+  margin-left: 582px;
+  margin-top: 15px;
+  width: 170px;
+  height: 225px;
+  border: 1px solid blue;
+}
+
+.grid-top > div {
+  border: 1px solid purple;
+  width: 54.5px;
+  height: 26px;
+  float: left;
+}
+
+.grid-bottom {
+  position: absolute;
+  margin-left: 582px;
+  margin-top: 357px;
+  width: 170px;
+  height: 225px;
+  border: 1px solid blue;
+}
+
+.grid-bottom > div {
+  border: 1px solid pink;
+  width: 54.5px;
+  height: 26px;
+  float: left;
+}
+
+.grid-left {
+  position: absolute;
+  margin-left: 385px;
+  margin-top: 215px;
+  width: 225px;
+  height: 170px;
+  border: 1px solid blue;
+}
+
+.grid-left > div {
+  border: 1px solid orange;
+  width: 26px;
+  height: 54.5px;
+  float: left;
+}
+
+.grid-right {
+  position: absolute;
+  margin-left: 725px;
+  margin-top: 215px;
+  width: 225px;
+  height: 170px;
+  border: 1px solid blue;
+}
+
+.grid-right > div {
+  border: 1px solid red;
+  width: 26px;
+  height: 54.5px;
+  float: left;
+}
+
+.grid-center-blue {
+  border: 1px solid green;
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  margin-left: 632px;
+  margin-top: 242px;
+}
+
+.grid-center-yellow {
+  border: 1px solid red;
+  position: absolute;
+  width: 30px;
+  height: 70px;
+  margin-left: 693px;
+  margin-top: 263px;
+}
+
+.grid-center-green {
+  border: 1px solid blue;
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  margin-left: 632px;
+  margin-top: 327px;
+}
+
+.grid-center-red {
+  border: 1px solid yellow;
+  position: absolute;
+  width: 30px;
+  height: 70px;
+  margin-left: 610px;
+  margin-top: 263px;
+}
+
+#dice {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  margin-left: 1050px;
+  border-radius: 20px;
+  display: none;
+}
+
+#dot1 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+#dot2 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 25px;
+  margin-top: 62px;
+}
+
+#dot3 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 25px;
+  margin-top: 105px;
+}
+
+#dot4 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 102px;
+  margin-top: 20px;
+}
+
+#dot5 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 102px;
+  margin-top: 62px;
+}
+
+#dot6 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 102px;
+  margin-top: 105px;
+}
+
+#dot7 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 63px;
+  margin-top: 62px;
+}
