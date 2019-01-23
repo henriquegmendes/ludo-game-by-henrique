@@ -13,7 +13,9 @@ h1 {
 
 #button {
   display: block;
-  margin: 35px auto;
+  position: absolute;
+  margin-left: 100px;
+  margin-bottom: 30px;
   padding: 15px 25px;
   font-size: 20px;
   text-align: center;
@@ -29,33 +31,118 @@ h1 {
 #button:hover {background-color: #a59b27}
 
 #button:active {
-  background-color: #a59b27;
+  background-color: #1d6ee9;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-.button-dice {
+.button-dice-blue {
+  position: absolute;
   display: block;
-  margin: 35px auto;
+  margin-left: 100px;
   padding: 15px 25px;
   font-size: 20px;
   text-align: center;
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #427a43;
+  background-color: #2828d6;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
   display: none;
 }
 
-.button-dice:hover {
+.button-dice-blue:hover {
   background-color: #172c6d;
 }
 
-.button-dice:active {
+.button-dice-blue:active {
   background-color: #172c6d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-dice-yellow {
+  position: absolute;
+  display: block;
+  margin-top: 70px;
+  margin-left: 100px;
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #8b8b00;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  display: none;
+}
+
+.button-dice-yellow:hover {
+  background-color: #2e3b08;
+}
+
+.button-dice-yellow:active {
+  background-color: #70882d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-dice-green {
+  position: absolute;
+  display: block;
+  margin-top: 140px;
+  margin-left: 100px;
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #49974a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  display: none;
+}
+
+.button-dice-green:hover {
+  background-color: #1e792a;
+}
+
+.button-dice-green:active {
+  background-color: #1e792a;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-dice-red {
+  position: absolute;
+  display: block;
+  margin-top: 210px;
+  margin-left: 100px;
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #b62d29;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  display: none;
+}
+
+.button-dice-red:hover {
+  background-color: #812e19;
+}
+
+.button-dice-red:active {
+  background-color: #812e19;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -65,10 +152,11 @@ h1 {
   width: 20px;
   height: 20px;
   background: blue;
-  margin-left: 10%;
+  /* margin-left: 10%; */
   /* margin-top: 10%; */
   border-radius: 50%;
   border: 1px solid #000000;
+  display: none;
 }
 
 .yellow-pawn {
@@ -76,10 +164,11 @@ h1 {
   width: 20px;
   height: 20px;
   background: yellow;
-  margin-left: 10%;
-  margin-top: 10%;
+  /* margin-left: 10%; */
+  /* margin-top: 10%; */
   border-radius: 50%;
   border: 1px solid #000000;
+  display: none;
 }
 
 .green-pawn {
@@ -87,10 +176,11 @@ h1 {
   width: 20px;
   height: 20px;
   background: green;
-  margin-left: 10%;
-  margin-top: 10%;
+  /* margin-left: 10%; */
+  /* margin-top: 10%; */
   border-radius: 50%;
   border: 1px solid #000000;
+  display: none;
 }
 
 .red-pawn {
@@ -98,10 +188,11 @@ h1 {
   width: 20px;
   height: 20px;
   background: red;
-  margin-left: 10%;
-  margin-top: 10%;
+  /* margin-left: 10%; */
+  /* margin-top: 10%; */
   border-radius: 50%;
   border: 1px solid #000000;
+  display: none;
 }
 
 .base-blue {
@@ -170,32 +261,30 @@ h1 {
 
 .grid-top {
   position: absolute;
-  margin-left: 582px;
+  margin-left: 597px;
   margin-top: 15px;
   width: 170px;
   height: 225px;
-  border: 1px solid blue;
 }
 
 .grid-top > div {
   border: 1px solid purple;
-  width: 54.5px;
+  width: 45px;
   height: 26px;
   float: left;
 }
 
 .grid-bottom {
   position: absolute;
-  margin-left: 582px;
+  margin-left: 597px;
   margin-top: 357px;
   width: 170px;
   height: 225px;
-  border: 1px solid blue;
 }
 
 .grid-bottom > div {
   border: 1px solid pink;
-  width: 54.5px;
+  width: 45px;
   height: 26px;
   float: left;
 }
@@ -203,32 +292,30 @@ h1 {
 .grid-left {
   position: absolute;
   margin-left: 385px;
-  margin-top: 215px;
+  margin-top: 229px;
   width: 225px;
   height: 170px;
-  border: 1px solid blue;
 }
 
 .grid-left > div {
   border: 1px solid orange;
   width: 26px;
-  height: 54.5px;
+  height: 45px;
   float: left;
 }
 
 .grid-right {
   position: absolute;
   margin-left: 725px;
-  margin-top: 215px;
+  margin-top: 229px;
   width: 225px;
   height: 170px;
-  border: 1px solid blue;
 }
 
 .grid-right > div {
   border: 1px solid red;
   width: 26px;
-  height: 54.5px;
+  height: 45px;
   float: left;
 }
 
@@ -346,4 +433,19 @@ h1 {
   background-color: white;
   margin-left: 63px;
   margin-top: 62px;
+}
+
+.container-start-message {
+  display: block;
+  position: absolute;
+  margin-left: 1000px;
+  margin-top: 170px;
+  width: 250px;
+  height: 250px;
+  padding: 0 30px 0 30px;
+  background-color: black;
+  color: white;
+  text-align: left;
+  border-radius: 20px;
+  display: none;
 }
