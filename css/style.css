@@ -11,6 +11,10 @@ h1 {
   text-shadow: 1px 2px grey;
 }
 
+p {
+  font-size: 20px;
+}
+
 #button {
   display: block;
   position: absolute;
@@ -147,13 +151,20 @@ h1 {
   transform: translateY(4px);
 }
 
+#board-container {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  background-image: url("../images/tabuleiro-ludo.svg");
+  background-size: 600px;
+}
+
 .blue-pawn {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: blue;
-  /* margin-left: 10%; */
-  /* margin-top: 10%; */
+  background: rgb(43, 43, 193);
   border-radius: 50%;
   border: 1px solid #000000;
   display: none;
@@ -163,21 +174,20 @@ h1 {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: yellow;
-  /* margin-left: 10%; */
-  /* margin-top: 10%; */
+  margin-left: 4px;
+  background: rgb(165, 165, 48);
   border-radius: 50%;
   border: 1px solid #000000;
   display: none;
+  
 }
 
 .green-pawn {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: green;
-  /* margin-left: 10%; */
-  /* margin-top: 10%; */
+  margin-left: 8px;
+  background: rgb(53, 157, 53);
   border-radius: 50%;
   border: 1px solid #000000;
   display: none;
@@ -187,9 +197,8 @@ h1 {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: red;
-  /* margin-left: 10%; */
-  /* margin-top: 10%; */
+  margin-left: 12px;
+  background: rgb(176, 51, 51);
   border-radius: 50%;
   border: 1px solid #000000;
   display: none;
@@ -199,76 +208,74 @@ h1 {
   position: absolute;
   width: 80px;
   height: 80px;
-  border: 1px solid green;
-  margin-top: 72px;
-  margin-left: 443px;
+  margin-top: 85px;
+  margin-left: 85px;
 }
 
 .base-blue > div {
   float: left;
   width: 38px;
   height: 38px;
-  border: 1px solid red;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .base-yellow {
   position: absolute;
   width: 80px;
   height: 80px;
-  border: 1px solid green;
-  margin-top: 72px;
-  margin-left: 812px;
+  margin-top: 85px;
+  margin-left: 450px;
 }
 
 .base-yellow > div {
   float: left;
   width: 38px;
   height: 38px;
-  border: 1px solid red;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .base-green {
   position: absolute;
   width: 80px;
   height: 80px;
-  border: 1px solid blue;
-  margin-top: 442px;
-  margin-left: 812px;
+  margin-top: 455px;
+  margin-left: 447px;
 }
 
 .base-green > div {
   float: left;
   width: 38px;
   height: 38px;
-  border: 1px solid red;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .base-red {
   position: absolute;
   width: 80px;
   height: 80px;
-  border: 1px solid green;
-  margin-top: 442px;
-  margin-left: 443px;
+  /* border: 1px solid rgba(0, 0, 0, 0); */
+  margin-top: 455px;
+  margin-left: 74px;
 }
 
 .base-red > div {
   float: left;
   width: 38px;
   height: 38px;
-  border: 1px solid yellow;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .grid-top {
   position: absolute;
-  margin-left: 597px;
+  margin-left: 230px;
   margin-top: 15px;
   width: 170px;
   height: 225px;
+  rgba(0, 0, 0, 0)
 }
 
 .grid-top > div {
-  border: 1px solid purple;
+  border: 1px solid rgba(0, 0, 0, 0);
   width: 45px;
   height: 26px;
   float: left;
@@ -276,14 +283,14 @@ h1 {
 
 .grid-bottom {
   position: absolute;
-  margin-left: 597px;
+  margin-left: 230px;
   margin-top: 357px;
   width: 170px;
   height: 225px;
 }
 
 .grid-bottom > div {
-  border: 1px solid pink;
+  border: 1px solid rgba(0, 0, 0, 0);
   width: 45px;
   height: 26px;
   float: left;
@@ -291,14 +298,14 @@ h1 {
 
 .grid-left {
   position: absolute;
-  margin-left: 385px;
+  margin-left: 18px;
   margin-top: 229px;
   width: 225px;
   height: 170px;
 }
 
 .grid-left > div {
-  border: 1px solid orange;
+  border: 1px solid rgba(0, 0, 0, 0);
   width: 26px;
   height: 45px;
   float: left;
@@ -306,52 +313,52 @@ h1 {
 
 .grid-right {
   position: absolute;
-  margin-left: 725px;
+  margin-left: 358px;
   margin-top: 229px;
   width: 225px;
   height: 170px;
 }
 
 .grid-right > div {
-  border: 1px solid red;
+  border: 1px solid rgba(0, 0, 0, 0);
   width: 26px;
   height: 45px;
   float: left;
 }
 
 .grid-center-blue {
-  border: 1px solid green;
+  border: 1px solid rgba(0, 0, 0, 0);
   position: absolute;
   width: 70px;
   height: 30px;
-  margin-left: 632px;
+  margin-left: 265px;
   margin-top: 242px;
 }
 
 .grid-center-yellow {
-  border: 1px solid red;
+  border: 1px solid rgba(0, 0, 0, 0);
   position: absolute;
   width: 30px;
   height: 70px;
-  margin-left: 693px;
+  margin-left: 328px;
   margin-top: 263px;
 }
 
 .grid-center-green {
-  border: 1px solid blue;
+  border: 1px solid rgba(0, 0, 0, 0);
   position: absolute;
   width: 70px;
   height: 30px;
-  margin-left: 632px;
+  margin-left: 265px;
   margin-top: 327px;
 }
 
 .grid-center-red {
-  border: 1px solid yellow;
+  border: 1px solid rgba(0, 0, 0, 0);
   position: absolute;
   width: 30px;
   height: 70px;
-  margin-left: 610px;
+  margin-left: 243px;
   margin-top: 263px;
 }
 
@@ -438,13 +445,44 @@ h1 {
 .container-start-message {
   display: block;
   position: absolute;
-  margin-left: 1000px;
+  margin-left: 985px;
   margin-top: 170px;
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 325px;
   padding: 0 30px 0 30px;
-  background-color: black;
   color: white;
+  text-align: left;
+  border-radius: 20px;
+  display: none;
+}
+
+.box1 {
+  background-color: rgb(48, 48, 193) !important;
+}
+
+.box2 {
+  background-color: rgb(139, 139, 0);
+}
+
+.box3 {
+  background-color: rgb(17, 133, 30);
+}
+
+.box4 {
+  background-color: rgb(182, 45, 41);
+}
+
+.container-end-message {
+  display: block;
+  position: relative;
+  text-align: center !important;
+  margin-left: 340px;
+  margin-top: 0;
+  width: 600px;
+  height: 600px;
+  padding: 30px;
+  background-color: #027575;
+  color: white !important;
   text-align: left;
   border-radius: 20px;
   display: none;
