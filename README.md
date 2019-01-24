@@ -8,7 +8,8 @@ First of all I would like to say THANKS to all my colleagues, my teacher and all
 
 ## Getting Started
 
-This game works at the browser and does not need any instalation. Just click in this LINK and the game will open in your browser.
+This game works at the browser and does not need any instalation.
+* Link to run the game in your browser => [HERE](https://henriquegmendes.github.io/Ludo-Game-by-Henrique/).
 
 ## Prerequisites
 
@@ -43,6 +44,7 @@ During the project I had to make some adaptations in order to present a function
 * Implement rule of returning a piece to the base if another color's piece stops if the same square.
 * Implement rule of blocking the path if a player get 2 pieces (of the same color of course) in the same square. Blocking the path means that the other colors became blocked and won't be able to move along.
 * Improve the method to move each piece into the home triangle . If the dice returns a mumber bigger than the number of steps left to the home triangle, the piece must move inside the home triangle and then go back the remaining steps, until the player rolls the exact number needed.
+* Add responsiveness to the game page to improve mobile experience.
 
 ### CODE IMPROVEMENTS
 * I made the best to write an organized code. Since my initial proposal was to implement this game applying only DOM manipulation methods, my logic is not object oriented and has no use of any frameworks or tools, such as jQuery or Canvas. Probably bacause of that, I faced many challenges to manupulate all elements properly and made all logic works in the way I wanted (that's why I changed/adapted/ignored some rules). The base of this game was matrix of "DIV" elements placed on a Ludo's Board Image, and all other elements created, such as the buttons pawns and dice, were made in CSS and them manipulated with Javascript.
