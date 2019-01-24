@@ -32,7 +32,7 @@ startButton.addEventListener('click', () => {
   greenPlayButton.style.display = 'none';
   redPlayButton.style.display = 'none';
   startMessage.style.display = 'block';
-  for (i = 1; i <= 4; i += 1) {
+  for (let i = 1; i <= 4; i += 1) {
     document.getElementById('b' + i).style.display = 'block';
     document.getElementById('y' + i).style.display = 'block';
     document.getElementById('g' + i).style.display = 'block';
@@ -42,50 +42,164 @@ startButton.addEventListener('click', () => {
 
 bluePlayButton.addEventListener('click', () => {
   rollDice();
+  bluePlayButton.style.display = 'none';
 });
 
 yellowPlayButton.addEventListener('click', () => {
   rollDice();
+  yellowPlayButton.style.display = 'none';
 });
 
 greenPlayButton.addEventListener('click', () => {
   rollDice();
+  greenPlayButton.style.display = 'none';
 });
 
 redPlayButton.addEventListener('click', () => {
   rollDice();
+  redPlayButton.style.display = 'none';
 });
 
 blue1.addEventListener('click', () => {
-  if (document.getElementById('board-blue-base-1').children.length === 0) {
-    moveBlue1();
-  }
-  if (document.getElementById('board-blue-base-1').children.length > 0 && diceResult === 1 || document.getElementById('board-blue-base-1').children.length > 0 && diceResult === 6) {
-    document.getElementById(newPosition).appendChild(document.getElementById('b1'));
-  }
+  blue1MovementCondition();
   bluePlayButton.style.display = 'none';
   yellowPlayButton.style.display = 'block';
   startMessage.style.display = 'none';
   yellowMessage.style.display = 'block';
+  blueEndGame();
+});
+
+blue2.addEventListener('click', () => {
+  blue2MovementCondition();
+  bluePlayButton.style.display = 'none';
+  yellowPlayButton.style.display = 'block';
+  startMessage.style.display = 'none';
+  yellowMessage.style.display = 'block';
+  blueEndGame();
+});
+
+blue3.addEventListener('click', () => {
+  blue3MovementCondition();
+  bluePlayButton.style.display = 'none';
+  yellowPlayButton.style.display = 'block';
+  startMessage.style.display = 'none';
+  yellowMessage.style.display = 'block';
+  blueEndGame();
+});
+
+blue4.addEventListener('click', () => {
+  blue4MovementCondition();
+  bluePlayButton.style.display = 'none';
+  yellowPlayButton.style.display = 'block';
+  startMessage.style.display = 'none';
+  yellowMessage.style.display = 'block';
+  blueEndGame();
 });
 
 yellow1.addEventListener('click', () => {
+  yellow1MovementCondition();
   yellowPlayButton.style.display = 'none';
   greenPlayButton.style.display = 'block';
   yellowMessage.style.display = 'none';
   greenMessage.style.display = 'block';
+  yellowEndGame();
+});
+
+yellow2.addEventListener('click', () => {
+  yellow2MovementCondition();
+  yellowPlayButton.style.display = 'none';
+  greenPlayButton.style.display = 'block';
+  yellowMessage.style.display = 'none';
+  greenMessage.style.display = 'block';
+  yellowEndGame();
+});
+
+yellow3.addEventListener('click', () => {
+  yellow3MovementCondition();
+  yellowPlayButton.style.display = 'none';
+  greenPlayButton.style.display = 'block';
+  yellowMessage.style.display = 'none';
+  greenMessage.style.display = 'block';
+  yellowEndGame();
+});
+
+yellow4.addEventListener('click', () => {
+  yellow4MovementCondition();
+  yellowPlayButton.style.display = 'none';
+  greenPlayButton.style.display = 'block';
+  yellowMessage.style.display = 'none';
+  greenMessage.style.display = 'block';
+  yellowEndGame();
 });
 
 green1.addEventListener('click', () => {
+  green1MovementCondition();
   greenPlayButton.style.display = 'none';
   redPlayButton.style.display = 'block';
   greenMessage.style.display = 'none';
   redMessage.style.display = 'block';
+  greenEndGame();
+});
+
+green2.addEventListener('click', () => {
+  green2MovementCondition();
+  greenPlayButton.style.display = 'none';
+  redPlayButton.style.display = 'block';
+  greenMessage.style.display = 'none';
+  redMessage.style.display = 'block';
+  greenEndGame();
+});
+
+green3.addEventListener('click', () => {
+  green3MovementCondition();
+  greenPlayButton.style.display = 'none';
+  redPlayButton.style.display = 'block';
+  greenMessage.style.display = 'none';
+  redMessage.style.display = 'block';
+  greenEndGame();
+});
+
+green4.addEventListener('click', () => {
+  green4MovementCondition();
+  greenPlayButton.style.display = 'none';
+  redPlayButton.style.display = 'block';
+  greenMessage.style.display = 'none';
+  redMessage.style.display = 'block';
+  greenEndGame();
 });
 
 red1.addEventListener('click', () => {
+  red1MovementCondition();
   redPlayButton.style.display = 'none';
   bluePlayButton.style.display = 'block';
   redMessage.style.display = 'none';
   blueMessage.style.display = 'block';
+  redEndGame();
+});
+
+red2.addEventListener('click', () => {
+  red2MovementCondition();
+  redPlayButton.style.display = 'none';
+  bluePlayButton.style.display = 'block';
+  redMessage.style.display = 'none';
+  blueMessage.style.display = 'block';
+  redEndGame();
+});
+
+red3.addEventListener('click', () => {
+  red3MovementCondition();
+  redPlayButton.style.display = 'none';
+  bluePlayButton.style.display = 'block';
+  redMessage.style.display = 'none';
+  blueMessage.style.display = 'block';
+  redEndGame();
+});
+
+red4.addEventListener('click', () => {
+  red4MovementCondition();
+  redPlayButton.style.display = 'none';
+  bluePlayButton.style.display = 'block';
+  redMessage.style.display = 'none';
+  blueMessage.style.display = 'block';
+  redEndGame();
 });

@@ -1,5 +1,3 @@
-let diceResult = [];
-const buttonDice = document.getElementById('blue-play');
 const dice = document.getElementById('dice');
 const number1 = document.getElementById('dot1');
 const number2 = document.getElementById('dot2');
@@ -11,7 +9,6 @@ const number7 = document.getElementById('dot7');
 
 function rollDice() {
   diceResult = Math.ceil(Math.random() * 6);
-  console.log('result', diceResult);
   dice.style.display = 'block';
   number1.style.display = 'none';
   number2.style.display = 'none';
