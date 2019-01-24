@@ -162,45 +162,22 @@ p {
 
 .blue-pawn {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background: rgb(43, 43, 193);
-  border-radius: 50%;
-  border: 1px solid #000000;
   display: none;
 }
 
 .yellow-pawn {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  margin-left: 4px;
-  background: rgb(165, 165, 48);
-  border-radius: 50%;
-  border: 1px solid #000000;
   display: none;
   
 }
 
 .green-pawn {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  margin-left: 8px;
-  background: rgb(53, 157, 53);
-  border-radius: 50%;
-  border: 1px solid #000000;
   display: none;
 }
 
 .red-pawn {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  margin-left: -4px;
-  background: rgb(176, 51, 51);
-  border-radius: 50%;
-  border: 1px solid #000000;
   display: none;
 }
 
@@ -208,8 +185,8 @@ p {
   position: absolute;
   width: 80px;
   height: 80px;
-  margin-top: 83px;
-  margin-left: 85px;
+  margin-top: 78px;
+  margin-left: 80px;
 }
 
 .base-blue > div {
@@ -223,7 +200,7 @@ p {
   position: absolute;
   width: 80px;
   height: 80px;
-  margin-top: 85px;
+  margin-top: 80px;
   margin-left: 450px;
 }
 
@@ -238,8 +215,8 @@ p {
   position: absolute;
   width: 80px;
   height: 80px;
-  margin-top: 455px;
-  margin-left: 446px;
+  margin-top: 450px;
+  margin-left: 450px;
 }
 
 .base-green > div {
@@ -253,9 +230,8 @@ p {
   position: absolute;
   width: 80px;
   height: 80px;
-  /* border: 1px solid rgba(0, 0, 0, 0); */
-  margin-top: 455px;
-  margin-left: 88px;
+  margin-top: 448px;
+  margin-left: 80px;
 }
 
 .base-red > div {
