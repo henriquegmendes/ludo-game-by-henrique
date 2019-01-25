@@ -43,6 +43,7 @@ p {
 .button-dice-blue {
   position: absolute;
   display: block;
+  margin-top: 70px;
   margin-left: 100px;
   padding: 15px 25px;
   font-size: 20px;
@@ -70,7 +71,7 @@ p {
 .button-dice-yellow {
   position: absolute;
   display: block;
-  margin-top: 70px;
+  margin-top: 140px;
   margin-left: 100px;
   padding: 15px 25px;
   font-size: 20px;
@@ -98,7 +99,7 @@ p {
 .button-dice-green {
   position: absolute;
   display: block;
-  margin-top: 140px;
+  margin-top: 210px;
   margin-left: 100px;
   padding: 15px 25px;
   font-size: 20px;
@@ -126,7 +127,7 @@ p {
 .button-dice-red {
   position: absolute;
   display: block;
-  margin-top: 210px;
+  margin-top: 280px;
   margin-left: 100px;
   padding: 15px 25px;
   font-size: 20px;
@@ -155,7 +156,6 @@ p {
   width: 600px;
   height: 600px;
   margin: 0 auto;
-  /* border: 1px solid black; */
   background-image: url("../images/tabuleiro-ludo.svg");
   background-size: 600px;
 }
@@ -432,7 +432,7 @@ p {
 }
 
 .box1 {
-  background-color: rgb(48, 48, 193) !important;
+  background-color: rgb(48, 48, 193);
 }
 
 .box2 {
