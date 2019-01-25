@@ -62,7 +62,6 @@ redPlayButton.addEventListener('click', () => {
 
 blue1.addEventListener('click', () => {
   blue1MovementCondition();
-  bluePlayButton.style.display = 'none';
   yellowPlayButton.style.display = 'block';
   startMessage.style.display = 'none';
   yellowMessage.style.display = 'block';
@@ -71,7 +70,6 @@ blue1.addEventListener('click', () => {
 
 blue2.addEventListener('click', () => {
   blue2MovementCondition();
-  bluePlayButton.style.display = 'none';
   yellowPlayButton.style.display = 'block';
   startMessage.style.display = 'none';
   yellowMessage.style.display = 'block';
@@ -80,7 +78,6 @@ blue2.addEventListener('click', () => {
 
 blue3.addEventListener('click', () => {
   blue3MovementCondition();
-  bluePlayButton.style.display = 'none';
   yellowPlayButton.style.display = 'block';
   startMessage.style.display = 'none';
   yellowMessage.style.display = 'block';
@@ -89,7 +86,6 @@ blue3.addEventListener('click', () => {
 
 blue4.addEventListener('click', () => {
   blue4MovementCondition();
-  bluePlayButton.style.display = 'none';
   yellowPlayButton.style.display = 'block';
   startMessage.style.display = 'none';
   yellowMessage.style.display = 'block';
@@ -98,7 +94,6 @@ blue4.addEventListener('click', () => {
 
 yellow1.addEventListener('click', () => {
   yellow1MovementCondition();
-  yellowPlayButton.style.display = 'none';
   greenPlayButton.style.display = 'block';
   yellowMessage.style.display = 'none';
   greenMessage.style.display = 'block';
@@ -107,7 +102,6 @@ yellow1.addEventListener('click', () => {
 
 yellow2.addEventListener('click', () => {
   yellow2MovementCondition();
-  yellowPlayButton.style.display = 'none';
   greenPlayButton.style.display = 'block';
   yellowMessage.style.display = 'none';
   greenMessage.style.display = 'block';
@@ -116,7 +110,6 @@ yellow2.addEventListener('click', () => {
 
 yellow3.addEventListener('click', () => {
   yellow3MovementCondition();
-  yellowPlayButton.style.display = 'none';
   greenPlayButton.style.display = 'block';
   yellowMessage.style.display = 'none';
   greenMessage.style.display = 'block';
@@ -125,7 +118,6 @@ yellow3.addEventListener('click', () => {
 
 yellow4.addEventListener('click', () => {
   yellow4MovementCondition();
-  yellowPlayButton.style.display = 'none';
   greenPlayButton.style.display = 'block';
   yellowMessage.style.display = 'none';
   greenMessage.style.display = 'block';
@@ -134,7 +126,6 @@ yellow4.addEventListener('click', () => {
 
 green1.addEventListener('click', () => {
   green1MovementCondition();
-  greenPlayButton.style.display = 'none';
   redPlayButton.style.display = 'block';
   greenMessage.style.display = 'none';
   redMessage.style.display = 'block';
@@ -143,7 +134,6 @@ green1.addEventListener('click', () => {
 
 green2.addEventListener('click', () => {
   green2MovementCondition();
-  greenPlayButton.style.display = 'none';
   redPlayButton.style.display = 'block';
   greenMessage.style.display = 'none';
   redMessage.style.display = 'block';
@@ -152,7 +142,6 @@ green2.addEventListener('click', () => {
 
 green3.addEventListener('click', () => {
   green3MovementCondition();
-  greenPlayButton.style.display = 'none';
   redPlayButton.style.display = 'block';
   greenMessage.style.display = 'none';
   redMessage.style.display = 'block';
@@ -161,7 +150,6 @@ green3.addEventListener('click', () => {
 
 green4.addEventListener('click', () => {
   green4MovementCondition();
-  greenPlayButton.style.display = 'none';
   redPlayButton.style.display = 'block';
   greenMessage.style.display = 'none';
   redMessage.style.display = 'block';
@@ -170,7 +158,6 @@ green4.addEventListener('click', () => {
 
 red1.addEventListener('click', () => {
   red1MovementCondition();
-  redPlayButton.style.display = 'none';
   bluePlayButton.style.display = 'block';
   redMessage.style.display = 'none';
   blueMessage.style.display = 'block';
@@ -179,7 +166,6 @@ red1.addEventListener('click', () => {
 
 red2.addEventListener('click', () => {
   red2MovementCondition();
-  redPlayButton.style.display = 'none';
   bluePlayButton.style.display = 'block';
   redMessage.style.display = 'none';
   blueMessage.style.display = 'block';
@@ -188,7 +174,6 @@ red2.addEventListener('click', () => {
 
 red3.addEventListener('click', () => {
   red3MovementCondition();
-  redPlayButton.style.display = 'none';
   bluePlayButton.style.display = 'block';
   redMessage.style.display = 'none';
   blueMessage.style.display = 'block';
@@ -197,7 +182,6 @@ red3.addEventListener('click', () => {
 
 red4.addEventListener('click', () => {
   red4MovementCondition();
-  redPlayButton.style.display = 'none';
   bluePlayButton.style.display = 'block';
   redMessage.style.display = 'none';
   blueMessage.style.display = 'block';
