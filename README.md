@@ -10,7 +10,7 @@ First of all I would like to say THANKS to all my colleagues, my teacher and all
 
 This game works at the browser and does not need any installation.
 
-* Link to run the game in your browser => [HERE](https://henriquegmendes.github.io/Ludo-Game-by-Henrique/).
+* Link to run the game in your browser => [HERE](https://henriquegmendes.github.io/ludo-game-by-henrique/).
 
 ## Prerequisites
 
